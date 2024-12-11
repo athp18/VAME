@@ -3,6 +3,9 @@ from setuptools import setup, find_packages
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
+with open("requirements.txt", "r") as f:
+    requirements = [line.strip() for line in f if line.strip() and not line.startswith("#")]
+
 setup(
     name="vame",
     version='1.0',
@@ -12,20 +15,10 @@ setup(
     description="Variational Animal Motion Embedding.",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://https://github.com/LINCellularNeuroscience/VAME/",
+    url="https://github.com/LINCellularNeuroscience/VAME/",
     setup_requires=[
         "pytest",
-    ],	
-    install_requires=[
-        "pytest-shutil",
-        "scipy",
-        "numpy",
-        "matplotlib",
-        "pathlib",
-	"pandas",
-        "ruamel.yaml",
-	"sklearn",
-        "pyyaml",
-        "opencv-python",
     ],
+    install_requires=requirements,
+    python_requires=">=3.6",
 )
