@@ -1,0 +1,10 @@
+pytest-shutil
+numpy<2.0
+numpy
+matplotlib
+pandas
+ruamel.yaml
+scikit-learn
+pyyaml
+opencv-python
+hmmlearn
