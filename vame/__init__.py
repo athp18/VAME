@@ -27,3 +27,4 @@ from vame.util.align_egocentrical import egocentric_alignment
 from vame.util import auxiliary
 from vame.util.auxiliary import update_config
 
+__version__ = "Vame version 1.0.0"
