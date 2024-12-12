@@ -8,7 +8,8 @@ This file converts a multi-animal DLC CSV to several single animal DLC files.
 Those can be used as input to run VAME.
 """
 
-import pandas, numpy as pd, np
+import pandas as pd
+import numpy as np
 import os
 import glob
 from pathlib import Path
