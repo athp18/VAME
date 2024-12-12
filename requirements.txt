@@ -5,6 +5,7 @@ matplotlib
 pandas
 ruamel.yaml
 scikit-learn
+umap-learn
 pyyaml
 opencv-python
 hmmlearn
